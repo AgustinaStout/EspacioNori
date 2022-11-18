@@ -40,22 +40,6 @@ header{
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 500px){
-    header{
-        width: auto;
-    }
-    header nav div{
-        display: flex;
-        justify-content: center;
-    }
-    header nav ul li{
-        width: fit-content;
-    }
-    header nav ul li a{
-        display: none;
-    }
-}
-
 .logo{
     width: 100px;
     height: 110px;
@@ -110,11 +94,6 @@ main{
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
-}
-@media screen and (max-width: 480px) {
-    .portada{
-        flex-direction: column;
-        }
 }
 .portada p{
     background-color: rgba(245, 245, 245, 0.432);
@@ -189,11 +168,6 @@ transform: scale(1.1);
     margin-top: 20px;
     margin-bottom: 20px;
 }
-@media screen and (max-width: 480px){
-    .informacionContacto{
-        flex-direction: column;
-    }
-}
 .informacionContacto ul{
     list-style-type: none;
 }
@@ -225,7 +199,6 @@ transform: scale(1.1);
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
 /*main experiencias*/
 .experiencias section{
     background-color:  #ffbd596c;
@@ -233,17 +206,6 @@ transform: scale(1.1);
     margin: 20px 30px;
     padding: 20px;
     justify-content: space-between;
-}
-@media screen and (max-width: 480px){
-    .experiencias section{
-        flex-direction: column;
-    }
-    .experiencias section div h3{
-        margin-bottom: 5px;
-    }
-    .experiencias section div{
-        margin-bottom: 15px;
-    }
 }
 .experiencias section div{
     width: 100%;
@@ -262,11 +224,6 @@ transform: scale(1.1);
     align-items: center;
     padding-bottom: 20px;
     padding-left: 20px;
-}
-@media screen and (max-width: 950px) {
-    .nosotrosContenedor{
-        flex-direction: column;
-        }
 }
 .nosotrosContenedor p{
     height: fit-content;
@@ -305,20 +262,6 @@ footer{
     font-size: medium;
     font-weight: bold;
 }
-@media screen and (max-width: 480px) {
-    footer .divSuperior div .primerP{
-        display: none;
-        }
-    footer .divSuperior div{
-        font-size: x-large;
-    }
-    footer .divSuperior ul li{
-        font-size: larger;
-    }
-    footer .divSuperior ul li i{
-        display: none;
-    }
-}
 footer .divSuperior{
     display: flex;
     justify-content: space-around;
@@ -348,4 +291,53 @@ footer .divCopy{
     text-align: center;
     margin-top: 10px;
     font-size: smaller;
+}
+@media screen and (max-width: 480px){
+    .portada{
+        flex-direction: column;
+    }
+    .experiencias section{
+        flex-direction: column;
+    }
+    .experiencias section div h3{
+        margin-bottom: 5px;
+    }
+    .experiencias section div{
+        margin-bottom: 15px;
+    }
+    .informacionContacto{
+        flex-direction: column;
+    }
+    footer .divSuperior div .primerP{
+        display: none;
+    }
+    footer .divSuperior div{
+        font-size: x-large;
+    }
+    footer .divSuperior ul li{
+        font-size: larger;
+    }
+    footer .divSuperior ul li i{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    header{
+        width: auto;
+    }
+    header nav div{
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul li{
+        width: fit-content;
+    }
+    header nav ul li a{
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+    .nosotrosContenedor{
+        flex-direction: column;
+        }
 }
