@@ -81,7 +81,6 @@ header nav ul li a{
     text-decoration: none;
     color: whitesmoke;
 }
-
 /*Main raiz*/
 main{
     grid-area: main;
@@ -160,17 +159,6 @@ transform: scale(1.1);
     height: 100%;
     object-fit: cover;
 }
-/*main contacto*/
-.informacionContacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.informacionContacto ul{
-    list-style-type: none;
-}
 /*main creaciones*/
 .creacionesP{
     font-style: italic;
@@ -200,22 +188,22 @@ transform: scale(1.1);
     margin-top: 10px;
 }
 /*main experiencias*/
-.experiencias section{
+.accordion-button{
     background-color:  #ffbd596c;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: x-large;
+}
+.accordion-flush{
+    background-color:  #ffbd596c;
+}
+.accordion-body{
     display: flex;
-    margin: 20px 30px;
-    padding: 20px;
     justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/fondo.png);
 }
-.experiencias section div{
-    width: 100%;
-}
-.experiencias section div p{
-    font-size: large;
-}
-.experiencias section img{
-    width: 300px;
-    height: 300px;
+.accordion-body p{
+    font-size: x-large;
 }
 /*main nosotros*/
 .nosotrosContenedor{
@@ -251,6 +239,17 @@ transform: scale(1.1);
     -moz-box-shadow: 10px 10px 38px -9px rgba(0,0,0,0.75);
     margin-top: 20px;
     margin-bottom: 20px;
+}
+/*main contacto*/
+.informacionContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.informacionContacto ul{
+    list-style-type: none;
 }
 /*footer*/
 footer{
@@ -304,6 +303,9 @@ footer .divCopy{
     }
     .experiencias section div{
         margin-bottom: 15px;
+    }
+    .accordion-body p{
+        font-size: medium;
     }
     .informacionContacto{
         flex-direction: column;
