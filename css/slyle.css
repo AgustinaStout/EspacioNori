@@ -86,6 +86,11 @@ header nav ul li {
     transition: all 1s ease;
 }
 
+header nav ul li a{
+display:flex;
+justify-content: center;
+}
+
 header nav ul li:hover {
     transform: scale(1.1);
 }
@@ -439,9 +444,9 @@ footer .divCopy {
 
     header nav ul li {
         width: fit-content;
+        height: fit-content;
     }
-
-    header nav ul li a {
+    header nav ul li a p{
         display: none;
     }
 }
