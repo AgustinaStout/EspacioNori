@@ -184,15 +184,6 @@ width: 100%;
 height: 100%;
 object-fit: none;
 }
-/*.creaciones div{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;   
-}
-.creaciones div img {
-    width: 200px;
-    height: 300px;
-} LO TENGO QUE BORRAR CREOOOOOOO!!!!!!*/
 .galeriaGrid {
     display: grid;
     grid-auto-rows: 300px;
@@ -327,7 +318,26 @@ object-fit: none;
 .informacionContacto ul {
     list-style-type: none;
 }
+.formulario{
+    background-color:#ffbd596c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formulario input{
+    outline: none;
+}
 
+.formulario input:focus{
+    border: 2px solid orange;
+}
+
+.formulario textarea{
+    outline: none;
+}
+.formulario textarea:focus{
+    border: 2px solid orange;
+}
 /*footer*/
 footer {
     grid-area: footer;
