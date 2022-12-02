@@ -39,28 +39,23 @@ h2 {
     ;
 }
 
-/* header*/
+/* header PSADO A SCSS*/
 header {
     grid-area: header;
     display: flex;
     justify-content: center;
 }
 
-.logo {
-    width: 100px;
-    height: 110px;
-    padding-top: 10px;
-    margin-left: 30px;
-}
-
 header nav {
     background-color: rgba(0, 0, 0, 0.39);
-    margin-left: 80px;
-    margin-right: 80px;
     width: 100%;
 }
 
 header nav div a img {
+    width: 100px;
+    height: 110px;
+    padding-top: 10px;
+    margin-left: 30px;
     transition: all 1s ease;
 }
 
@@ -99,6 +94,9 @@ header nav ul li a {
     text-decoration: none;
     color: whitesmoke !important;
 }
+header nav ul li a p{
+    margin-bottom: 0;
+}
 
 /*Main raiz*/
 main {
@@ -130,14 +128,6 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.divExperiencias a {
-    text-decoration: none;
-    color: black;
-}
-.divExperiencias img {
-    width: 200px;
-    height: 200px;
-}
 .divExperiencias div {
     width: 202px;
     height: 250px;
@@ -150,6 +140,14 @@ main {
     -moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
     text-align: center;
     transition: all 1s ease;
+}
+.divExperiencias div a {
+    text-decoration: none;
+    color: black;
+}
+.divExperiencias div a img {
+    width: 200px;
+    height: 200px;
 }
 
 .divExperiencias div:hover {
@@ -389,12 +387,39 @@ footer .divCopy {
     margin-top: 10px;
     font-size: smaller;
 }
-
-@media screen and (max-width: 480px) {
+/* media query */
+/* 
+@media screen and (max-width: 950px) {
+    .nosotrosContenedor {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 984px){
     .portada {
         flex-direction: column;
     }
+}
 
+@media screen and (max-width: 500px) {
+    header {
+        width: auto;
+    }
+
+    header nav div {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        width: fit-content;
+        height: fit-content;
+    }
+    header nav ul li a p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .experiencias section {
         flex-direction: column;
     }
@@ -430,29 +455,4 @@ footer .divCopy {
     footer .divSuperior ul li i {
         display: none;
     }
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        width: auto;
-    }
-
-    header nav div {
-        display: flex;
-        justify-content: center;
-    }
-
-    header nav ul li {
-        width: fit-content;
-        height: fit-content;
-    }
-    header nav ul li a p{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .nosotrosContenedor {
-        flex-direction: column;
-    }
-}
+} */
