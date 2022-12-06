@@ -1,11 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.gridContenedor {
+  display: grid;
+  grid-template-rows: 205px auto 140px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer"; }
+
+body {
+  background-image: url(../img/fondo.png);
+  background-repeat: round;
+  font-family: 'Plus Jakarta Sans', sans-serif; }
+  body h1 {
+    text-align: center;
+    background-color: #ffbd59d2;
+    padding: 10px;
+    font-style: italic;
+    font-weight: lighter; }
+  body h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: #ffbd596c; }
+
+.portada {
+  background-image: url(../img/Portada.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px; }
+  .portada p {
+    background-color: rgba(245, 245, 245, 0.432);
+    height: fit-content;
+    padding: 30px;
+    font-weight: bolder;
+    font-size: large; }
+
+.divExperiencias {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .divExperiencias div {
+    width: 202px;
+    height: 250px;
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transition: all 1s ease; }
+    .divExperiencias div:hover {
+      transform: scale(1.1); }
+    .divExperiencias div a {
+      text-decoration: none;
+      color: black; }
+      .divExperiencias div a img {
+        width: 200px;
+        height: 200px; }
+
+.creaciones h2 {
+  margin-bottom: 20px; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "img-1 . Img-2" ". img-5 ." "img-4 . img-3"; }
+
+.img-1 {
+  grid-area: img-1; }
+
+.img-4 {
+  grid-area: img-4; }
+
+.Img-2 {
+  grid-area: Img-2; }
+
+.img-5 {
+  grid-area: img-5; }
+
+.img-3 {
+  grid-area: img-3; }
+
+.container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: none; }
+
 header {
   grid-area: header;
   display: flex;
   justify-content: center; }
   header nav {
     background-color: rgba(0, 0, 0, 0.39);
-    margin-left: 80px;
-    margin-right: 80px;
     width: 100%; }
     header nav div a img {
       width: 100px;
@@ -36,3 +137,146 @@ header {
           justify-content: center;
           text-decoration: none;
           color: whitesmoke !important; }
+          header nav ul li a p {
+            margin-bottom: 0; }
+
+.nosotrosContenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 20px; }
+  .nosotrosContenedor p {
+    height: fit-content;
+    margin: 30px; }
+
+.profesores h2 {
+  padding-bottom: 20px; }
+
+.profesores p {
+  text-align: center;
+  font-weight: bold; }
+
+.profesoresContenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .profesoresContenedor div {
+    width: 252px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.accordion-button {
+  background-color: #ffbd596c;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: x-large; }
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffbd59;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: x-large;
+  color: black; }
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='0000006c'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+
+.accordion-flush {
+  background-color: #ffbd596c; }
+
+.accordion-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/fondo.png); }
+
+.accordion-body p {
+  font-size: x-large; }
+
+.creacionesP {
+  font-style: italic;
+  font-size: large;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center; }
+
+.boxCreaciones {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .boxCreaciones div {
+    width: 252px;
+    height: 370px;
+    border: 1px solid;
+    box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+    .boxCreaciones div img {
+      width: 250px;
+      height: 320px; }
+
+.informacionContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .informacionContacto ul {
+    list-style-type: none; }
+
+form {
+  background-color: #ffbd596c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  form input {
+    outline: none; }
+    form input:focus {
+      border: 2px solid orange; }
+  form textarea {
+    outline: none; }
+    form textarea:focus {
+      border: 2px solid orange; }
+
+footer {
+  grid-area: footer;
+  background-image: url(../img/Portada.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 5px;
+  font-size: medium;
+  font-weight: bold; }
+  footer .divSuperior {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 20px;
+    background-color: rgba(245, 245, 245, 0.432);
+    height: fit-content;
+    padding-bottom: 10px; }
+    footer .divSuperior div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .divSuperior div a {
+        text-decoration: none;
+        color: black; }
+        footer .divSuperior div a img {
+          width: 20px;
+          height: 20px; }
+    footer .divSuperior ul li {
+      list-style-type: none; }
+  footer .divCopy {
+    text-align: center;
+    margin-top: 10px;
+    font-size: smaller; }

@@ -1,0 +1,88 @@
+.portada{
+        background-image: url(../img/Portada.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    p{
+        background-color: rgba(245, 245, 245, 0.432);
+        height: fit-content;
+        padding: 30px;
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+.divExperiencias{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+div{
+width: 202px;
+height: 250px;
+border: 1px solid;
+text-align: center;
+font-weight: bold;
+font-size: medium;
+box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+text-align: center;
+transition: all 1s ease;
+&:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: black;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+}
+}
+.creaciones{
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img-1 . Img-2"
+        ". img-5 ."
+        "img-4 . img-3";
+}
+.img-1 {
+    grid-area: img-1;
+}
+.img-4 {
+    grid-area: img-4;
+}
+.Img-2 {
+    grid-area: Img-2;
+}
+.img-5 {
+    grid-area: img-5;
+}
+.img-3 {
+    grid-area: img-3;
+}
+.container{
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+        }
+    }
+}

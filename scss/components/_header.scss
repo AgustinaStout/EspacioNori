@@ -4,8 +4,6 @@ header{
     justify-content: center;
     nav{
         background-color: rgba(0, 0, 0, 0.39);
-        margin-left: 80px;
-        margin-right: 80px;
         width: 100%;
         div{
             a{
@@ -43,9 +41,8 @@ header{
                     justify-content: center;
                     text-decoration: none;
                     color: whitesmoke !important;
-                    i{
-                    }
                     p{
+                        margin-bottom: 0;
                     }
                 }
             }

@@ -1,0 +1,36 @@
+.nosotrosContenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    p{
+        height: fit-content;
+        margin: 30px;
+    }
+}
+.profesores{
+    h2{
+        padding-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        font-weight: bold;
+    }
+}
+.profesoresContenedor {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+    div{
+        width: 252px;
+        height: 400px;
+        text-align: center;
+        border: 1px solid;
+        box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

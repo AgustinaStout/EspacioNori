@@ -1,25 +1,41 @@
 footer{
-    div{
+    grid-area: footer;
+    background-image: url(../img/Portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 5px;
+    font-size: medium;
+    font-weight: bold;
+    .divSuperior{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        padding-top: 20px;
+        background-color: rgba(245, 245, 245, 0.432);
+        height: fit-content;
+        padding-bottom: 10px;
         div{
-            p{
-    
-            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             a{
-    
-            }
-            p{
-    
+                text-decoration: none;
+                color: black;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
             }
         }
         ul{
             li{
-
+                list-style-type: none;
             }
         }
     }
-    div{
-        p{
-            
-        }
+    .divCopy{
+        text-align: center;
+        margin-top: 10px;
+        font-size: smaller;
     }
 }
