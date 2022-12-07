@@ -1,0 +1,75 @@
+@media screen and (max-width: 1020px) {
+    .informacionContacto {
+        flex-direction: column;
+        align-items: center;
+        ul{
+        display: none;
+        }
+        .mapa{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .portada{
+        flex-direction: column;
+    }
+    .nosotrosContenedor {
+        flex-direction: column;
+    }
+    .nosotrosContenedor p{
+        font-size: x-large;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 800px){
+    .accordion-body img{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    header nav div {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    header nav ul li {
+        width: fit-content;
+        height: fit-content;
+    }
+    header nav ul li a i{
+        font-size: x-large;
+    }
+    header nav ul li a p{
+        display: none;
+    }
+    .portada p{
+        font-size: x-large;
+    }
+    footer .divSuperior div .primerP {
+        display: none;
+    }
+
+    footer .divSuperior div {
+        font-size: x-large;
+    }
+
+    footer .divSuperior ul li {
+        font-size: larger;
+    }
+
+    footer .divSuperior ul li i {
+        display: none;
+    }
+    
+    .profesores p{
+        font-size: x-large;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 500px){
+    footer .divSuperior ul{
+        display: none;
+    }
+}

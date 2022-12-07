@@ -44,8 +44,8 @@ body {
 
 .divExperiencias {
   display: flex;
-  flex-flow: row wrap;
   flex-direction: row;
+  flex-wrap: row wrap;
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -233,20 +233,19 @@ header {
   margin-bottom: 20px; }
   .informacionContacto ul {
     list-style-type: none; }
-
-form {
-  background-color: #ffbd596c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-  form input {
-    outline: none; }
-    form input:focus {
-      border: 2px solid orange; }
-  form textarea {
-    outline: none; }
-    form textarea:focus {
-      border: 2px solid orange; }
+  .informacionContacto form {
+    background-color: #ffbd596c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .informacionContacto form input {
+      outline: none; }
+      .informacionContacto form input:focus {
+        border: 2px solid orange; }
+    .informacionContacto form textarea {
+      outline: none; }
+      .informacionContacto form textarea:focus {
+        border: 2px solid orange; }
 
 footer {
   grid-area: footer;
@@ -280,3 +279,56 @@ footer {
     text-align: center;
     margin-top: 10px;
     font-size: smaller; }
+
+@media screen and (max-width: 1020px) {
+  .informacionContacto {
+    flex-direction: column;
+    align-items: center; }
+    .informacionContacto ul {
+      display: none; }
+    .informacionContacto .mapa {
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 1000px) {
+  .portada {
+    flex-direction: column; }
+  .nosotrosContenedor {
+    flex-direction: column; }
+  .nosotrosContenedor p {
+    font-size: x-large;
+    font-weight: 400; } }
+
+@media screen and (max-width: 800px) {
+  .accordion-body img {
+    display: none; } }
+
+@media screen and (max-width: 700px) {
+  header nav div {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (max-width: 600px) {
+  header nav ul li {
+    width: fit-content;
+    height: fit-content; }
+  header nav ul li a i {
+    font-size: x-large; }
+  header nav ul li a p {
+    display: none; }
+  .portada p {
+    font-size: x-large; }
+  footer .divSuperior div .primerP {
+    display: none; }
+  footer .divSuperior div {
+    font-size: x-large; }
+  footer .divSuperior ul li {
+    font-size: larger; }
+  footer .divSuperior ul li i {
+    display: none; }
+  .profesores p {
+    font-size: x-large;
+    font-weight: 400; } }
+
+@media screen and (max-width: 500px) {
+  footer .divSuperior ul {
+    display: none; } }

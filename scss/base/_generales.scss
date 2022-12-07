@@ -21,7 +21,7 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     h1 {
     text-align: center;
-    background-color: #ffbd59d2;
+    background-color: $color-principal;
     padding: 10px;
     font-style: italic;
     font-weight: lighter;
@@ -31,6 +31,6 @@ body {
         margin-top: 20px;
         font-style: italic;
         font-weight: lighter;
-        background-color: #ffbd596c;
+        background-color: $color-secundario;
     }
 }

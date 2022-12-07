@@ -7,22 +7,22 @@
     ul{
         list-style-type: none;
     }
-}
-form{
-    background-color:#ffbd596c;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    input{
-        outline: none;
-        &:focus{
-            border: 2px solid orange;
+    form{
+        background-color:#ffbd596c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        input{
+            outline: none;
+            &:focus{
+                border: 2px solid orange;
+            }
         }
-    }
-    textarea{
-        outline: none;
-        &:focus{
-            border: 2px solid orange;
+        textarea{
+            outline: none;
+            &:focus{
+                border: 2px solid orange;
+            }
         }
     }
 }
