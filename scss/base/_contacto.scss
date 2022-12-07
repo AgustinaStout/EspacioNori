@@ -1,7 +1,7 @@
+@import "./variables";
+
 .informacionContacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex (flex, space-around, wrap, row);
     margin-top: 20px;
     margin-bottom: 20px;
     ul{
@@ -9,9 +9,7 @@
     }
     form{
         background-color:#ffbd596c;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include flex (flex, space-around, wrap, column);
         input{
             outline: none;
             &:focus{

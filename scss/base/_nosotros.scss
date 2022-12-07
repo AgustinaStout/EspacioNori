@@ -1,7 +1,6 @@
+@import "./variables";
 .nosotrosContenedor{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include align (flex, center, row);
     padding-bottom: 20px;
     padding-left: 20px;
     p{
@@ -19,9 +18,7 @@
     }
 }
 .profesoresContenedor {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
+    @include flex (flex, space-around, row wrap, row);
     div{
         width: 252px;
         height: 400px;

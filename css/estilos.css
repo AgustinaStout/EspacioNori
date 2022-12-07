@@ -32,8 +32,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   margin-top: 20px; }
   .portada p {
     background-color: rgba(245, 245, 245, 0.432);
@@ -44,9 +44,9 @@ body {
 
 .divExperiencias {
   display: flex;
-  flex-direction: row;
-  flex-wrap: row wrap;
   justify-content: space-around;
+  flex-flow: row wrap;
+  flex-direction: row;
   margin-top: 20px;
   margin-bottom: 20px; }
   .divExperiencias div {
@@ -142,8 +142,8 @@ header {
 
 .nosotrosContenedor {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   padding-bottom: 20px;
   padding-left: 20px; }
   .nosotrosContenedor p {
@@ -159,8 +159,9 @@ header {
 
 .profesoresContenedor {
   display: flex;
+  justify-content: space-around;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  flex-direction: row; }
   .profesoresContenedor div {
     width: 252px;
     height: 400px;
@@ -207,9 +208,9 @@ header {
 
 .boxCreaciones {
   display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
-  flex-direction: row;
-  justify-content: space-between; }
+  flex-direction: row; }
   .boxCreaciones div {
     width: 252px;
     height: 370px;
@@ -227,8 +228,9 @@ header {
 
 .informacionContacto {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  flex-flow: wrap;
+  flex-direction: row;
   margin-top: 20px;
   margin-bottom: 20px; }
   .informacionContacto ul {
@@ -236,8 +238,9 @@ header {
   .informacionContacto form {
     background-color: #ffbd596c;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-flow: wrap;
+    flex-direction: column; }
     .informacionContacto form input {
       outline: none; }
       .informacionContacto form input:focus {

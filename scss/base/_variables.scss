@@ -1,2 +1,17 @@
 $color-principal: #ffbd59d2;
 $color-secundario:#ffbd596c;
+$color-fondoboostrap:#ffbd59;
+$color-fondocontenedores: rgba(245, 245, 245, 0.432);
+
+@mixin flex ($flex, $justify, $flow, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    flex-flow: $flow;
+    flex-direction: $direction;
+}
+
+@mixin align ($flex, $align, $direction) {
+    display: $flex;
+    align-items: $align;
+    flex-direction: $direction;
+}

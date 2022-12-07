@@ -1,3 +1,4 @@
+@import "./variables";
 .creacionesP {
     font-style: italic;
     font-size: large;
@@ -6,10 +7,8 @@
     text-align: center;
 }
 .boxCreaciones{
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex (flex, space-between, row wrap, row);
+    
     div{
         width: 252px;
         height: 370px;

@@ -1,13 +1,12 @@
+@import "./variables";
 .portada{
         background-image: url(../img/Portada.jpg);
         background-size: cover;
         background-attachment: fixed;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include align (flex, center, row);
         margin-top: 20px;
     p{
-        background-color: rgba(245, 245, 245, 0.432);
+        background-color: $color-fondocontenedores ;
         height: fit-content;
         padding: 30px;
         font-weight: bolder;
@@ -15,10 +14,7 @@
     }
 }
 .divExperiencias{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: row wrap;
-    justify-content: space-around;
+    @include flex (flex, space-around, row wrap,row);
     margin-top: 20px;
     margin-bottom: 20px;
 div{

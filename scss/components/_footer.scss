@@ -1,3 +1,4 @@
+@import "../base/variables";
 footer{
     grid-area: footer;
     background-image: url(../img/Portada.jpg);
@@ -11,7 +12,7 @@ footer{
         justify-content: space-around;
         margin-top: 10px;
         padding-top: 20px;
-        background-color: rgba(245, 245, 245, 0.432);
+        background-color: $color-fondocontenedores;
         height: fit-content;
         padding-bottom: 10px;
         div{
