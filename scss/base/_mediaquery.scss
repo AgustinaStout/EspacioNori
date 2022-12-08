@@ -27,6 +27,15 @@
     .accordion-body img{
         display: none;
     }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        box-sizing: border-box;
+    }
+    .img-2{
+        display: none;
+    }
 }
 @media screen and (max-width: 700px){
     header nav div {
@@ -47,6 +56,12 @@
     }
     .portada p{
         font-size: x-large;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        box-sizing: border-box;
     }
     footer .divSuperior div .primerP {
         display: none;

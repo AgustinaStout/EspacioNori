@@ -76,30 +76,16 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px 400px;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: row;
-  grid-template-areas: "img-1 . Img-2" ". img-5 ." "img-4 . img-3"; }
-
-.img-1 {
-  grid-area: img-1; }
-
-.img-4 {
-  grid-area: img-4; }
-
-.Img-2 {
-  grid-area: Img-2; }
-
-.img-5 {
-  grid-area: img-5; }
-
-.img-3 {
-  grid-area: img-3; }
+  grid-template-rows: 400px 400px;
+  box-sizing: border-box;
+  gap: 10px; }
+  .container .img-2 {
+    grid-row: span 2; }
 
 .container div img {
   width: 100%;
   height: 100%;
-  object-fit: none; }
+  object-fit: cover; }
 
 header {
   grid-area: header;
@@ -151,7 +137,7 @@ header {
     margin: 30px; }
 
 .profesores h2 {
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
 
 .profesores p {
   text-align: center;
@@ -303,6 +289,13 @@ footer {
 
 @media screen and (max-width: 800px) {
   .accordion-body img {
+    display: none; }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    box-sizing: border-box; }
+  .img-2 {
     display: none; } }
 
 @media screen and (max-width: 700px) {
@@ -320,6 +313,11 @@ footer {
     display: none; }
   .portada p {
     font-size: x-large; }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    box-sizing: border-box; }
   footer .divSuperior div .primerP {
     display: none; }
   footer .divSuperior div {
