@@ -198,7 +198,7 @@ header {
 
 .boxCreaciones {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row wrap;
   flex-direction: row; }
   .boxCreaciones div {
@@ -274,13 +274,10 @@ footer {
     font-size: smaller; }
 
 @media screen and (max-width: 1020px) {
-  .informacionContacto {
-    flex-direction: column;
-    align-items: center; }
-    .informacionContacto ul {
-      display: none; }
-    .informacionContacto .mapa {
-      margin-bottom: 20px; } }
+  ul {
+    display: none; }
+  .mapa {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 1000px) {
   .portada {
@@ -315,8 +312,6 @@ footer {
     font-size: x-large; }
   header nav ul li a p {
     display: none; }
-  .portada p {
-    font-size: x-large; }
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -344,7 +339,7 @@ footer {
   footer .divSuperior ul {
     display: none; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .portada p {
     font-weight: normal;
     font-size: large; } }

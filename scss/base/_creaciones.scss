@@ -7,8 +7,7 @@
     text-align: center;
 }
 .boxCreaciones{
-    @include flex (flex, space-between, row wrap, row);
-    
+    @include flex (flex, space-around, row wrap, row);
     div{
         width: 252px;
         height: 370px;

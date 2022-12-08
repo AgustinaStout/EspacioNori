@@ -1,15 +1,11 @@
 @import "./variables";
 @media screen and (max-width: 1020px) {
-    .informacionContacto {
-        flex-direction: column;
-        align-items: center;
         ul{
         display: none;
         }
         .mapa{
             margin-bottom: 20px;
         }
-    }
 }
 @media screen and (max-width: 1000px) {
     .portada{
@@ -54,9 +50,6 @@
     header nav ul li a p{
         display: none;
     }
-    .portada p{
-        font-size: x-large;
-    }
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -96,7 +89,7 @@
         display: none;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .portada p{
     font-weight: normal;
     font-size: large;
