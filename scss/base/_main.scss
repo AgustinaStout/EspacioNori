@@ -5,6 +5,10 @@
         background-attachment: fixed;
         @include align (flex, center, row);
         margin-top: 20px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
     p{
         background-color: $color-fondocontenedores ;
         height: fit-content;
