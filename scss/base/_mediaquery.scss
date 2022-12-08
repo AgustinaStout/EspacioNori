@@ -63,6 +63,18 @@
         grid-template-rows: 300px 300px 300px 300px;
         box-sizing: border-box;
     }
+    .nosotrosContenedor p{
+    font-size: medium;
+    font-weight: normal;
+    }
+    .profesores p{
+    font-size: medium;
+    font-weight: normal;
+    }
+    .profesoresContenedor p{
+        font-size: x-large;
+        font-weight: 400;
+    }
     footer .divSuperior div .primerP {
         display: none;
     }
@@ -78,14 +90,15 @@
     footer .divSuperior ul li i {
         display: none;
     }
-    
-    .profesores p{
-        font-size: x-large;
-        font-weight: 400;
-    }
 }
 @media screen and (max-width: 500px){
     footer .divSuperior ul{
         display: none;
     }
+}
+@media screen and (max-width:400px) {
+    .portada p{
+    font-weight: normal;
+    font-size: large;
+    }    
 }

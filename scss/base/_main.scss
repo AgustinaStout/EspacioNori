@@ -19,8 +19,6 @@
 }
 .divExperiencias{
     @include flex (flex, space-around, row wrap,row);
-    margin-top: 20px;
-    margin-bottom: 20px;
 div{
 width: 202px;
 height: 250px;
@@ -31,6 +29,8 @@ font-size: medium;
 box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
 -webkit-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
 -moz-box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.75);
+margin-top: 20px;
+margin-bottom: 20px;
 text-align: center;
 transition: all 1s ease;
 &:hover{
