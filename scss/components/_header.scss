@@ -4,7 +4,7 @@ header{
     display: flex;
     justify-content: center;
     nav{
-        background-color: rgba(0, 0, 0, 0.39);
+        background-color: $color-header;
         width: 100%;
         div{
             a{
@@ -29,7 +29,7 @@ header{
                 list-style-type: none;
                 margin-left: 20px;
                 margin-right: 20px;
-                background-color: rgba(68, 65, 65, 0.61);
+                background-color: $color-botones;
                 padding: 10px;
                 color: whitesmoke;
                 border-radius: 100px;
