@@ -226,16 +226,17 @@ header {
   .informacionContacto ul {
     list-style-type: none; }
   .informacionContacto form {
-    background-color: #ffbd596c;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
     flex-direction: column; }
     .informacionContacto form input {
+      background-color: #ffbd596c;
       outline: none; }
       .informacionContacto form input:focus {
         border: 2px solid orange; }
     .informacionContacto form textarea {
+      background-color: #ffbd596c;
       outline: none; }
       .informacionContacto form textarea:focus {
         border: 2px solid orange; }

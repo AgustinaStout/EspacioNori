@@ -8,15 +8,16 @@
         list-style-type: none;
     }
     form{
-        background-color:#ffbd596c;
         @include flex (flex, space-around, wrap, column);
         input{
+            background-color:$color-secundario;
             outline: none;
             &:focus{
                 border: 2px solid orange;
             }
         }
         textarea{
+            background-color:$color-secundario;
             outline: none;
             &:focus{
                 border: 2px solid orange;
